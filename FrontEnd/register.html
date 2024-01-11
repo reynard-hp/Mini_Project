@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wear House</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/login-form.css">
+    <link rel="stylesheet" href="./styles/register.css">
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/ca39800cde.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Wear House</h2>
+            </div>
+            <button type="button" class="mobile-button" id="navigationButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="page link">
+                <li><a href="./index.html">Category</a></li>
+                <li><a href="./index.html">About Us</a></li>
+            </ul>
+            <ul class="regis-login link">
+                <li><a href="./index.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="form-container"  id="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="password">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="form-group agreement">
+                <input type="checkbox" name="remember" value="1" id="agree-checkbox"> 
+                <label for="agree-checkbox">By clicking register, i agree to the terms and conditions.</label>
+            </div>
+
+            <div class="form-group register">
+                <button type="button" id="register-button">Register</button>
+            </div>
+        </div>
+
+        <div class="error-msg">
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <a href="https://twitter.com/menswearhouse" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/wearhouse.gr/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/wearhouseofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright © 2023 Reynard Hans Prayoga. All Rights Reserved </p>
+    </footer>
+
+    <script src="./utilities/register.js"></script>
+    <script src="./navbar.js"></script>
+</body>
+</html>

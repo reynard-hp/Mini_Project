@@ -1,0 +1,27 @@
+.about-title{
+    margin-left: 18%;
+}
+
+.about-container {
+    width: 65%;
+    margin: 20px auto 0;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    box-shadow: 0 0 10px gray;
+}
+
+.contact {
+    margin-top: 5px;
+    line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+    .about-title{
+        margin-left: 5%;
+    }
+
+    .about-container {
+        width: 90%;
+    }
+}

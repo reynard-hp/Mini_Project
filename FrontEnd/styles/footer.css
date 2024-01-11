@@ -1,0 +1,20 @@
+footer {
+    text-align: center;
+    padding: 0.75em;
+    color: white;
+    background-color: rgb(60, 60, 60);
+    width: 100%;
+    box-shadow: 0 -4px 2px gray;
+}
+
+.footer-info{
+    margin: 5px;
+}
+
+.footer-info a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 25px;
+}
+

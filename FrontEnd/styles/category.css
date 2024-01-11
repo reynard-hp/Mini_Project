@@ -1,0 +1,117 @@
+hr{
+    border: 0;
+    height: 1px;
+    background-color: rgb(220, 220, 220);;
+}
+
+.table-container {
+    margin-top: 10px;
+    border-collapse: collapse;
+    box-shadow: -3px 5px 15px gray;
+    padding: 15px;
+    width: 95%;
+}
+
+.add-button {
+    padding: 0.4rem;
+    width: 7rem;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    background-color: #3B71CA;
+}
+
+.table-category {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table-category th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-category tr:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+.table-category button{
+    padding: 0.4rem;
+    width: 4rem;
+    border-radius: 5px;
+    color: white;
+    border: 0
+}
+
+.edit-button {
+    background-color: #E4A11B;
+}
+
+.delete-button {
+    margin-left: 1em;
+    background-color: #DC4C64;
+}
+
+/* pop-up */
+.pop-up-container {
+    width: 400px;
+    border: 1px solid rgb(210, 210, 210);;
+    border-radius: 5px;
+    background-color: white;
+    position: fixed;
+    top: 15rem;
+    left: 25rem;
+    display: none;
+}
+
+.pop-up-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(220, 220, 220);;
+    padding: 10px;
+}
+
+.pop-up-title h2{
+    font-size: 18px;
+}
+
+.pop-up-content {
+    padding: 0.7em 0.5em;
+}
+
+.pop-up-content input{
+    margin: 10px 0;
+    height: 20px;
+    width: 55%;
+}
+
+.pop-up-content p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.button-container{
+    padding: 10px;
+}
+
+.submit-button {
+    padding: 8px;
+    margin-left: 85%;
+    background-color: #14A44D;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .table-category button{
+        width: 60px;
+    }
+
+    .pop-up-container {
+        width: 95%;
+        top: 12rem;
+        left: 0.5rem;
+    }
+}

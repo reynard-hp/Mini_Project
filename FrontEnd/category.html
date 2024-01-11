@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wear House</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link rel="stylesheet" href="./styles/category.css">
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/ca39800cde.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Wear House</h2>
+            </div>
+            <button type="button" class="mobile-button" id="navigationButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="page link">
+                <li><a href="#">Category</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+            </ul>
+            <ul class="regis-login link">
+                <li id="drop-logout"><span id="username">Nama</span> <i class="fa-solid fa-caret-down"></i></li>
+            </ul>
+            <div class="logout-button">
+                <a href="./index.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 class="product-title">Product Categories</h2>
+        <div class="table-container">
+            <button class="add-button">Add Category</button>
+            <table class="table-category">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="category-list">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pop-up-container add-category">
+            <div class="pop-up-title">
+                <h2>Add Category</h2>
+                <i class="fa-solid fa-xmark close-button"></i>
+            </div>
+            <div class="pop-up-content">
+                <p>Category</p>
+                <input type="text" name="category" id="category-input">
+                <hr>
+            </div>
+            <div class="button-container">
+                <button class="submit-button add-submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="pop-up-container edit-category">
+            <div class="pop-up-title">
+                <h2>Edit Category</h2>
+                <i class="fa-solid fa-xmark close-button"></i>
+            </div>
+            <div class="pop-up-content">
+                <p>Category</p>
+                <input type="text" name="category" id="edit-input">
+                <hr>
+            </div>
+            <div class="button-container">
+                <button class="submit-button edit-submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="pop-up-container delete-category">
+            <div class="pop-up-title">
+                <h2>Delete Category</h2>
+                <i class="fa-solid fa-xmark close-button"></i>
+            </div>
+            <div class="pop-up-content">
+                <p style="font-weight: normal;">This action is irreversible! Are you sure you want to delete this category?</p>
+                <hr>
+            </div>
+            <div class="button-container">
+                <button class="submit-button delete-submit">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <a href="https://twitter.com/menswearhouse" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/wearhouse.gr/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/wearhouseofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright © 2023 Reynard Hans Prayoga. All Rights Reserved </p>
+    </footer>
+
+    <script src="./navbar.js"></script>
+    <script src="./utilities/navbar-after-login.js" defer></script>
+    <script src="./utilities/category-list.js"></script>
+    <script src="./category.js"></script>
+</body>
+</html>

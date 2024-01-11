@@ -1,0 +1,29 @@
+.agreement {
+    margin-left: 8em;
+}
+
+.agreement label{
+    width: 500px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.agreement input{
+    width: 20px;
+}
+
+.register button{
+    width: 5rem;
+    height: 30px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #3B71CA;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .agreement {
+        margin-left: 0;
+    }
+}
